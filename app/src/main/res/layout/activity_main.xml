@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/latitude_value"
+            android:layout_width="0dp"
+            android:hint="value"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/longitude_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:hint="value"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/speed_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="value"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+    <Button
+        android:id='@+id/plot_button'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="PLOT MAP"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
